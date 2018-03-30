@@ -1,0 +1,24 @@
+<table>
+	<tr>
+		<td>姓名：</td>
+		<td>年龄：</td>
+		<td>性别：</td>
+		<td>身份证：</td>
+		<td>电话：</td>
+		<td>日期：</td>
+		<td>时间：</td>
+		<td>状态：</td>
+	</tr>
+	<volist name="orderList" id="order">
+	<tr>
+		<td>{$order.name}</td>
+		<td>{$order.age}</td>
+		<td>{$order.sex}</td>
+		<td>{$order.identifier}</td>
+		<td>{$order.tel}</td>
+		<td>{$order.date}</td>
+		<td>{$order.time}</td>
+		<td>{$order.status|checkStatus=###}</td>
+	</tr>
+	</volist>
+</table>
